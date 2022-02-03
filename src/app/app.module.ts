@@ -41,6 +41,9 @@ import { MatCardModule } from '@angular/material/card';
 // *------- Pipe -------*/
 import { ShortenPipe } from './Pipes/shorten.pipe';
 
+// *------- NGRX -------*/
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+
 @NgModule({
 	declarations: [
 		AppComponent,
@@ -65,7 +68,7 @@ import { ShortenPipe } from './Pipes/shorten.pipe';
 		FormsModule,
 		ReactiveFormsModule,
 		BrowserAnimationsModule,
-        HttpClientModule,
+		HttpClientModule,
 		FontAwesomeModule,
 		FlexLayoutModule,
 		LayoutModule,
@@ -77,7 +80,16 @@ import { ShortenPipe } from './Pipes/shorten.pipe';
 		MatMenuModule,
 		MatSnackBarModule,
 		MatCardModule,
-
+		StoreDevtoolsModule.instrument({
+			maxAge: 25,
+			logOnly: false,
+			autoPause: true,
+			features: {
+				pause: false,
+				lock: true,
+				persist: true,
+			},
+		}),
 	],
 	providers: [],
 	bootstrap: [AppComponent],
