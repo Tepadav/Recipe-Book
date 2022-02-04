@@ -7,16 +7,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 // *------------------ Router -----------------*/
-import { AppRoutingModule } from './app-routing/app-routing.module';
+import { AppRoutingModule } from './app.routing';
 
 // *------------------ Comoponents -----------------*/
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
-import { RecipesComponent } from './recipes/recipes.component';
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
-import { RecipeItemComponent } from './recipes/recipe-item/recipe-item.component';
-import { RecipeDetailsComponent } from './recipes/recipe-details/recipe-details.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { ErrorHandleComponent } from './error-handle/error-handle.component';
@@ -49,14 +46,10 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 		AppComponent,
 		MainNavComponent,
 		HomeComponent,
-		RecipesComponent,
-		RecipeDetailsComponent,
-		RecipeItemComponent,
 		ShoppingListComponent,
 		ShoppingEditComponent,
 		ErrorHandleComponent,
 		RecipeEditComponent,
-		ShortenPipe,
 		FooterComponent,
 		AboutComponent,
 		UpgradeComponent,

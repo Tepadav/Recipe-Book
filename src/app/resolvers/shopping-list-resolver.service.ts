@@ -7,7 +7,7 @@ import {
 import { Observable } from 'rxjs';
 
 //*------- Services -------*/
-import { ShoppingListService } from './../services/shopping-list.service';
+import { ShoppingListService } from '../services/shopping-list.service';
 
 //*------- Models -------*/
 import { ingredient } from '../models/ingredient.model';
